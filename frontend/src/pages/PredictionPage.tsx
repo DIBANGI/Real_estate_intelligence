@@ -279,7 +279,7 @@ export default function PredictionPage() {
                       Confidence Range: {formatPrice(result.priceRange.min)} – {formatPrice(result.priceRange.max)}
                     </div>
                   </div>
-                  <ScoreGauge score={result.confidenceScore} label="Confidence" size="lg" />
+                  
                 </div>
 
                 <div className="grid grid-cols-3 gap-3 mt-4 pt-4 border-t border-white/8">
@@ -287,10 +287,7 @@ export default function PredictionPage() {
                     <div className="text-[10px] text-slate-500 mb-1 uppercase font-bold">Per Sqft</div>
                     <div className="font-bold text-white text-sm">₹{Math.round(result.predictedPrice / form.sqft).toLocaleString()}</div>
                   </div>
-                  <div className="text-center border-x border-white/8">
-                    <div className="text-[10px] text-slate-500 mb-1 uppercase font-bold">Market Score</div>
-                    <div className="font-bold text-emerald-400 text-sm">A+ High</div>
-                  </div>
+                  
                   <div className="text-center">
                     <div className="text-[10px] text-slate-500 mb-1 uppercase font-bold">Database Sample</div>
                     <div className="font-bold text-sky-400 text-sm">20k Rows</div>
